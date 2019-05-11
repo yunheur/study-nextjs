@@ -1,12 +1,15 @@
-import Link from "next/link";
+import withLayout from "../components/MyLayout";
 
-const Index = () => (
-  <div>
-    <Link href="/about">
-      <button>Go to About Page</button>
-    </Link>
-    <p>Hello Next.js</p>
-  </div>
-);
+const Page = () => <p>Hello Next.js</p>;
 
-export default Index;
+export default withLayout(Page);
+
+// import Layout from "../components/MyLayout.js";
+
+// const Index = () => (
+//   <Layout>
+//     <p>Hello Next.js</p>
+//   </Layout>
+// );
+
+// export default Index;
